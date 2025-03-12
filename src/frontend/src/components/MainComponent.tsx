@@ -5,7 +5,7 @@ import {videos} from "../data/videos.ts"
 
 const MainContainer = styled.div<MainContainerProps>`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
     gap: 20px;
     padding: 20px 40px; 
     background-color: #0f0f0f;

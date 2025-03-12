@@ -2,7 +2,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/YnjPrqT3Yo0/maxresdefault.jpg",
         videoTime: "1:12:34",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/PSB_s1WWtXBMdZ6DXFP1Pp0eKSwzdkCWMAptvqF9MAH1dz-sZmoOvud4zkyWIXsZGJZicU7LXLs=s68-c-k-c0x00ffffff-no-rj",
         title: "Худшее в прошлом // witch house",
         channel: "mentaldisorders",
         views: "294 тыс. просмотров",
@@ -11,7 +11,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/KQWh_dnaXFA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgfIDsofzAP&rs=AOn4CLDmeY7ACV_0yL9j-JL1CGLONdQiFw",
         videoTime: "9:01:34",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/ytc/AIdro_mPSik3A7SmNZk2xHcBEpZG_WLoZtmmu3UQS81NF5g4=s68-c-k-c0x00ffffff-no-rj",
         title: "9 часов Russian Doomer Music | Русский пост панк",
         channel: "DOOMER",
         views: "291 тыс. просмотров",
@@ -20,7 +20,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/E0Pj-KXNbA8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDqbxnUCtWdPCHdK9ypYHTnaYrxG",
         videoTime: "2:34",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/TSVb8vsu3lfT4rY1RYpdJqXaLOwTOONy6CCZMe7C_0heE3ldEqHGjGv134a9jyL8BKY8PdcPP_E=s68-c-k-c0x00ffffff-no-rj",
         title: "One beer left",
         channel: "trahmammal_vwav",
         views: "6,8 млн просмотров",
@@ -29,7 +29,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/eJZcEUu9MkQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAjvCZxcbVZO_NnG7z7FbcYqn6xA",
         videoTime: "24:33",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/eqsrmZT8FyMGwc1BEsFTIk_lacLvcU7aIV1_UxqbRktc84Y7byzFAKNVMLf7uO__Dbgc1E4ltA=s68-c-k-c0x00ffffff-no-rj",
         title: "DEFTONES – ПОЧЕМУ ОНИ СНОВА ПОПУЛЯРНЫ?",
         channel: "Тихое место",
         views: "326 тыс. просмотров",
@@ -38,7 +38,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/aRcUVhVlSHg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBgliF60aZPTAWdoezX4a4em2Di0A",
         videoTime: "24:42",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/nxYrc_1_2f77DoBadyxMTmv7ZpRZapHR5jbuYe7PlPd5cIRJxtNNEYyOC0ZsxaDyJJzXrnJiuDE=s176-c-k-c0x00ffffff-no-rj-mo",
         title: "Мужчины Vs Женщины Выживают в Глуши за $500,000",
         channel: "MrBeast",
         views: "92 млн просмотров",
@@ -47,7 +47,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/h9qsiCkui8c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBsZiKAl4pfPwsE56nSDlfWDLtcQA",
         videoTime: "16:04",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/ytc/AIdro_lg3nP7aybuKFkD95n5uYV8nX5WqP5dagXCkQVaskhRiRE=s68-c-k-c0x00ffffff-no-rj",
         title: "ВИП ТАКСИ /ЭКОНОМ НА МАЙБАХЕ в Казани/ Таксуем на майбахе",
         channel: "Таксуем на майбахе",
         views: "394 тыс. просмотров",
@@ -56,7 +56,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/we3aUMqTssU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyBSoTsS1uj2wRWI-w41_U1QRmXA",
         videoTime: "1:56",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/ytc/AIdro_n1LKF0zcFQ5eQYZ1VqEFWxTg8lDGY1mR6vOV5qHHWSL5I=s68-c-k-c0x00ffffff-no-rj",
         title: 'все мемы "арбуз арбуз привет"',
         channel: "DAN4EK",
         views: "294 тыс. просмотров",
@@ -65,7 +65,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/0PfQ41wHZJ8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIE8oUDAP&rs=AOn4CLBR-lyF95FX-M3tTJcSh89Ph2tMtQ",
         videoTime: "16:14",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/rUHYAbUumbs1CkcrFIlVojRSnV52gjaqJc-LlnJsF9m0k090EpIG8MIY4gR1MnTfMTrPhhaoAg=s68-c-k-c0x00ffffff-no-rj",
         title: "Hearts of Iron 4. Троллинг хойки!",
         channel: "Папа Анонимус",
         views: "256 просмотров",
@@ -74,7 +74,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/sIFPftyqTWI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbufiAd0yGpYeSihh2RDHCxSzxBQ",
         videoTime: "3:12:34",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/JZqWsAOWcikK-H5-5KsKU7bHqaCfkwb5MPjj2VxszG5yqDyuBRjP1_KDAwpFhk4lyuCc4W7SjA=s68-c-k-c0x00ffffff-no-rj",
         title: "ты куришь на балконе в панельке плейлист",
         channel: "doomer vawe",
         views: "1,3 млн просмотров",
@@ -92,7 +92,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/gMqZR3pqMjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzjC5xfyCUVZqPNo4OQ0KjylLsWQ",
         videoTime: "25:44",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/ytc/AIdro_ls5mTHhTuXcNagLZtlhu9sP6DUvD0oBWTmQvW6ALNR9Ug=s88-c-k-c0x00ffffff-no-rj",
         title: "Удивительная закономерность в названиях цветов по всему миру",
         channel: "Vox",
         views: "7,6 млн просмотров",
@@ -101,7 +101,7 @@ export const videos = [
     {
         thumbnail: "https://i.ytimg.com/vi/h0F1VUWCa4M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDD_W428nx_u6Z-gMYwZuhcUxHy3g",
         videoTime: "17:34",
-        icon: "https://yt3.ggpht.com/ytc/AIdro_mr_QUxThDdIomisl-HaEvCz1KcbkxzQgCm__bdXFG3O2I=s68-c-k-c0x00ffffff-no-rj",
+        icon: "https://yt4.ggpht.com/7-2s6WpgczS2zV4rHYYNToV7vuXxh_XhbR2Xnfqc-cOLtAclOYziddyVCLwTNLbS0K49qI3wzQ=s68-c-k-c0x00ffffff-no-rj",
         title: "ПОЧЕМУ ЗАМЕТКИ ИМБА (notian, obsidian)",
         channel: "Grushonvitsky",
         views: "359 тыс. просмотров",

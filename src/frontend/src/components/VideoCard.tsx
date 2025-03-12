@@ -33,11 +33,11 @@ const VideoTimeText = styled.div`
     position: absolute;
     bottom: 8px; 
     right: 8px; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.62); 
     color: rgb(240, 240, 240);
     padding: 2px 6px; 
     border-radius: 4px; 
-    font-size: 12px; 
+    font-size: 11px; 
     font-weight: bold;
 `
 
