@@ -1,10 +1,15 @@
 import './App.css'
+import SideBar from "./components/SideBar.tsx";
+import Header from "./components/Header.tsx";
+import MainComponent from "./components/MainComponent.tsx";
 
 export default function App() {
   return (
-    <>
-        <h1>Hello world!</h1>
-    </>
+      <>
+          <Header/>
+          <SideBar/>
+          <MainComponent/>
+      </>
   )
 }
 
