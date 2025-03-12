@@ -10,9 +10,11 @@ const HeaderContainer = styled.header`
     justify-content: space-between;
     background-color: black;
     padding: 10px 20px;
-    margin-left: 80px;
     color: white;
     position: fixed;
+    width: calc(100% - ${({ isOpen }) => (isOpen ? "250px" : "80px")});
+    margin-left: ${({ isOpen }) => (isOpen ? "250px" : "80px")};
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
     top: 0;
     left: 0;
     right: 0;
@@ -20,9 +22,9 @@ const HeaderContainer = styled.header`
 `
 
 
-const Header: React.FC = () => {
+const Header: React.FC<{isOpen: boolean}> = ({isOpen}) => {
     return (
-        <HeaderContainer>
+        <HeaderContainer isOpen={isOpen}>
             <Logo/>
             <SearchInput/>
         </HeaderContainer>
