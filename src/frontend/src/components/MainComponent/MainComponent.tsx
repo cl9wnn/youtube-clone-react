@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import VideoCard from "./VideoCard.tsx";
-import {videos} from "../data/videos.ts"
+import {videos} from "../../data/videos.ts"
 
 const MainContainer = styled.div<MainContainerProps>`
     display: grid;

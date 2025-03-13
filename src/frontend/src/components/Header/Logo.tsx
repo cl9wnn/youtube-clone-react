@@ -1,4 +1,4 @@
-import logo from '../assets/youtube-logo.png';
+import logo from '../../assets/youtube-logo.png';
 import styled from "styled-components";
 import React from "react";
 

@@ -1,7 +1,7 @@
 import './App.css'
-import SideBar from "./components/SideBar.tsx";
-import Header from "./components/Header.tsx";
-import MainComponent from "./components/MainComponent.tsx";
+import SideBar from "./components/SideBar/SideBar.tsx";
+import Header from "./components/Header/Header.tsx";
+import MainComponent from "./components/MainComponent/MainComponent.tsx";
 import {useState} from "react";
 
 export default function App() {
