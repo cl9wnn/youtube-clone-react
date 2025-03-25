@@ -84,10 +84,14 @@ const Title = styled.p`
 
 const ChannelName = styled.p`
     margin: 0;
-    font-weight:300;
     padding-left: 10px;
-    color:#858585;
+    color: #858585;
+    font-weight: 500;
     font-size: 14px;
+
+    &:hover {
+        color: #d3d3d3;
+    }
 `
 
 const DataContainer = styled.div`

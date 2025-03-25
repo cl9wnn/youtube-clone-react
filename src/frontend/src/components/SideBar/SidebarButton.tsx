@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Icon from "../Common/Icon.tsx";
 
 const SideButton = styled.button`
     background: none;
@@ -17,12 +18,6 @@ const SideButton = styled.button`
         border-radius: 5px;
     }
 `
-const Icon = styled.span`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-`
 
 const Title = styled.span`
     font-size: 10px;
@@ -37,11 +32,7 @@ interface ElementButtonProps {
 const SidebarButton: React.FC<ElementButtonProps> = ({ path, text, onClick }) => {
     return (
         <SideButton onClick={onClick}>
-            <Icon>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                    <path d={path}></path>
-                </svg>
-            </Icon>
+            <Icon path={path} size={24} color={"white"} style={{marginBottom: 6}}/>
             <Title>{text}</Title>
         </SideButton>
     );

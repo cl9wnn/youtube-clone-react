@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
+import Icon from "../Common/Icon.tsx";
 
 interface Option {
     label: string;
-    icon: string;
+    path: string;
     onClick: () => void;
 }
 
@@ -37,12 +38,6 @@ const MenuItem = styled.div`
     }
 `;
 
-const Icon = styled.span`
-    width: 18px;
-    height: 18px;
-    margin-right: 14px;
-`;
-
 const Divider = styled.div`
     height: 1px;
     background-color: #555;
@@ -70,11 +65,7 @@ const VideoOptionsMenu: React.FC<VideoOptionsMenuProps> = ({ options, onClose, s
             {options.map((option, index) => (
                 <>
                     <MenuItem key={option.label} onClick={option.onClick}>
-                        <Icon>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
-                                <path d={option.icon}></path>
-                            </svg>
-                        </Icon>
+                        <Icon path={option.path} size={20} color={"white"} style={{marginRight: 14}}/>
                         {option.label}
                     </MenuItem>
                     {index === 3 && <Divider key={`divider-${index}`} />}
