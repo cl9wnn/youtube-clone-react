@@ -14,7 +14,6 @@ const HeaderContainer = styled.header`
     position: fixed;
     width: calc(100% - ${({ isOpen }) => (isOpen ? "250px" : "80px")});
     margin-left: ${({ isOpen }) => (isOpen ? "250px" : "80px")};
-    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
     top: 0;
     left: 0;
     right: 0;

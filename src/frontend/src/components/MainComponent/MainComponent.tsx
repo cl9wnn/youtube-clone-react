@@ -7,12 +7,11 @@ const MainContainer = styled.div<MainContainerProps>`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
     gap: 20px;
-    padding: 20px 40px; 
+    padding: 20px 40px 20px 10px; 
     background-color: #0f0f0f;
     width: calc(100% - ${({ isOpen }) => (isOpen ? "250px" : "80px")});
     margin-left: ${({ isOpen }) => (isOpen ? "250px" : "80px")};
     box-sizing: border-box;
-    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
 `
 
 interface MainContainerProps {

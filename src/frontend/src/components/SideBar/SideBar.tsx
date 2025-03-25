@@ -17,7 +17,6 @@ const SidebarContainer = styled.aside<SideBarContainerProps>`
     background-color: #0f0f0f;
     color: white;
     width: ${({ isOpen }) => (isOpen ? "250px" : "80px")};
-    transition: width 0.3s ease-in-out;
 `;
 
 const ToggleButton = styled.button`

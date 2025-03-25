@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import styled from "styled-components";
+import VideoOptionsMenu from "./VideoOptionsMenu";
+import {options} from "../../data/options.ts";
 
 const CardContainer = styled.div`
     cursor: pointer;
@@ -64,7 +66,8 @@ const TextContainer = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%; 
-    height: 100%; 
+    height: 100%;
+    font-weight: 600;
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
@@ -76,6 +79,7 @@ const Title = styled.p`
     padding: 0 10px 7px;
     font-size: 16px;
     text-align: left;
+    font-weight: 600;
 `
 
 const ChannelName = styled.p`
@@ -101,7 +105,8 @@ const InfoText = styled.p`
     margin: 0;
     font-weight:300;
     color:#858585;
-    font-size: 14px;`
+    font-size: 14px;
+`
 
 const SettingsBtn = styled.button`
     background-color: #007bff00;
@@ -113,6 +118,10 @@ const SettingsBtn = styled.button`
     border: none;
     border-radius: 50%;
     cursor: pointer;
+
+    &:active {
+        background-color: #3d3d3d;
+    }
 `
 
 interface VideoCardProps {
@@ -125,9 +134,36 @@ interface VideoCardProps {
     timeAgo:string;
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({
-    thumbnail, videoTime, icon, title, channel, views, timeAgo,
-}) => {
+const VideoCard: React.FC<VideoCardProps> = ({thumbnail, videoTime, icon, title, channel, views, timeAgo,}) => {
+   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 });
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+    const toggleMenu = () => {
+        if (menuOpen) {
+            setMenuOpen(false);
+        } else if (buttonRef.current) {
+            const rect = buttonRef.current.getBoundingClientRect();
+            const menuWidth = 360;
+            const menuHeight = 300;
+            const padding = 8;
+
+            let left = rect.right + padding;
+            let top = rect.top;
+
+            if (left + menuWidth > window.innerWidth) {
+                left = rect.left - menuWidth - padding;
+            }
+
+            if (top + menuHeight > window.innerHeight) {
+                top = rect.bottom - menuHeight;
+            }
+
+            setMenuPosition({ top: top + window.scrollY, left: left + window.scrollX });
+            setMenuOpen(true);
+        }
+    };
+
     return (
         <>
             <CardContainer>
@@ -145,11 +181,23 @@ const VideoCard: React.FC<VideoCardProps> = ({
                             <InfoText>• {timeAgo}</InfoText>
                         </DataContainer>
                     </TextContainer>
-                    <SettingsBtn>⋮</SettingsBtn>
+                    <SettingsBtn ref={buttonRef} onClick={toggleMenu}>⋮</SettingsBtn>
                 </VideoInfo>
             </CardContainer>
+
+            {menuOpen && (
+                <VideoOptionsMenu
+                    options={options}
+                    onClose={() => setMenuOpen(false)}
+                    style={{
+                        position: "absolute",
+                        top: menuPosition.top,
+                        left: menuPosition.left
+                    }}
+                />
+            )}
         </>
-    )
+    );
 }
 
 export default  VideoCard;
