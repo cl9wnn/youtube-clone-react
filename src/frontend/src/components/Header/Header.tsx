@@ -12,8 +12,8 @@ const HeaderContainer = styled.header`
     padding: 10px 20px;
     color: white;
     position: fixed;
-    width: calc(100% - ${({ isOpen }) => (isOpen ? "250px" : "80px")});
-    margin-left: ${({ isOpen }) => (isOpen ? "250px" : "80px")};
+    width: calc(100% - ${({ isOpen }) => (isOpen ? "230px" : "80px")});
+    margin-left: ${({ isOpen }) => (isOpen ? "230px" : "80px")};
     top: 0;
     left: 0;
     right: 0;

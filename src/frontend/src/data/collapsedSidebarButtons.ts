@@ -1,7 +1,7 @@
-export const sidebarButtons = [
+export const collapsedSidebarButtons = [
     {
         text: "Главная",
-        path: "M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z",
+        path: "M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z",
     },
     {
         text: "Shorts",

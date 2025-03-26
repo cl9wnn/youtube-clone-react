@@ -12,6 +12,7 @@ const SideButton = styled.button`
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
+    margin-left: 6px;
     padding: 10px;
     cursor: pointer;
 
@@ -25,13 +26,13 @@ const Title = styled.span`
     font-size: 10px;
 `
 
-interface ElementButtonProps {
+interface CollapsedSidebarButtonProps {
     path: string;
     text: string;
     onClick?: () => void;
 }
 
-const SidebarButton: React.FC<ElementButtonProps> = ({ path, text, onClick }) => {
+const CollapsedSidebarButton: React.FC<CollapsedSidebarButtonProps> = ({ path, text, onClick }) => {
     return (
         <SideButton onClick={onClick}>
             <Icon path={path} size={24} color={"white"} style={{marginBottom: 6}}/>
@@ -39,4 +40,4 @@ const SidebarButton: React.FC<ElementButtonProps> = ({ path, text, onClick }) =>
         </SideButton>
     );
 };
-export default SidebarButton;
+export default CollapsedSidebarButton;
