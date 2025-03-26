@@ -113,18 +113,21 @@ const InfoText = styled.p`
 `
 
 const SettingsBtn = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #007bff00;
     color: white;
     font-size: 22px;
-    width: 32px;
-    height: 32px;
-    align-items: center;
+    width: 36px;
+    height: 36px;
     border: none;
     border-radius: 50%;
+    flex-shrink: 0;
     cursor: pointer;
 
     &:active {
-        background-color: #3d3d3d;
+        background-color: #2e2e2e;
     }
 `
 

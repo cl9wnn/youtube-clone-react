@@ -4,17 +4,19 @@ import Icon from "../Common/Icon.tsx";
 
 const SideButton = styled.button`
     background: none;
-    border: none; 
-    color: #fff; 
+    border: none;
+    color: #fff;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin-bottom: 15px; 
-    padding: 10px; 
+    width: 60px;
+    height: 70px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px;
     cursor: pointer;
 
     &:hover {
-        background-color: #444;
+        background-color: #2e2e2e;
         border-radius: 5px;
     }
 `

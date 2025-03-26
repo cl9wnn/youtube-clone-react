@@ -33,7 +33,7 @@ const ToggleButton = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: #444;
+        background-color: #2e2e2e;
     }
 `
 

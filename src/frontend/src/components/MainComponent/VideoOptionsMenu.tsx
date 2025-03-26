@@ -65,7 +65,7 @@ const VideoOptionsMenu: React.FC<VideoOptionsMenuProps> = ({ options, onClose, s
             {options.map((option, index) => (
                 <>
                     <MenuItem key={option.label} onClick={option.onClick}>
-                        <Icon path={option.path} size={20} color={"white"} style={{marginRight: 14}}/>
+                        <Icon path={option.path} size={22} color={"white"} style={{marginRight: 14}}/>
                         {option.label}
                     </MenuItem>
                     {index === 3 && <Divider key={`divider-${index}`} />}
