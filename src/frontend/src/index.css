@@ -13,10 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 body {
   margin: 0;
-  padding-top: 120px; /* высота вашего header */
+  padding-top: 78px;
   display: flex;
   place-items: center;
   min-width: 320px;

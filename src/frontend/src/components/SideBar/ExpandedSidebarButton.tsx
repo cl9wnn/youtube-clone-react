@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Icon from "../Common/Icon.tsx";
 
-const SidebarButton = styled.button`
-    background: none;
+const SidebarButton = styled.button<{isActive:boolean}>`
+    background: ${({ isActive }) => (isActive ? "#2e2e2e" : "none")};
     border: none;
+    border-radius: 12px;
     color: #fff;
     display: flex;
     width: 200px;
@@ -18,7 +19,6 @@ const SidebarButton = styled.button`
 
     &:hover {
         background-color: #2e2e2e;
-        border-radius: 12px;
     }
 `;
 
@@ -30,16 +30,16 @@ const Title = styled.span`
 interface ExpandedSidebarButtonProps {
     path: string;
     text: string;
-    onClick?: () => void;
+    isActive: boolean;
+    onClick: () => void;
 }
-const ExpandedSidebarButton: React.FC<ExpandedSidebarButtonProps> = ({path, text, onClick}) => {
+
+const ExpandedSidebarButton: React.FC<ExpandedSidebarButtonProps> = ({path, text, isActive, onClick}) => {
     return (
-        <SidebarButton onClick={onClick}>
+        <SidebarButton onClick={onClick} isActive={isActive}>
             <Icon path={path} size={24} color={"white"} style={{marginBottom: 6, marginRight: 28}}/>
             <Title>{text}</Title>
         </SidebarButton>
-
-
     );
 };
 

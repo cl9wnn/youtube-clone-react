@@ -7,7 +7,7 @@ const MainContainer = styled.div<MainContainerProps>`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
     gap: 20px;
-    padding: 20px 40px 20px 10px; 
+    padding: 20px 30px 20px 25px; 
     background-color: #0f0f0f;
     width: calc(100% - ${({ isOpen }) => (isOpen ? "230px" : "80px")});
     margin-left: ${({ isOpen }) => (isOpen ? "230px" : "80px")};
