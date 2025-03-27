@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Icon from "../Common/Icon.tsx";
 
-
-
 const SidebarButton = styled.button`
     background: none;
     border: none;
@@ -25,7 +23,7 @@ const SidebarButton = styled.button`
 `;
 
 const Title = styled.span`
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
 `;
 
@@ -37,7 +35,7 @@ interface ExpandedSidebarButtonProps {
 const ExpandedSidebarButton: React.FC<ExpandedSidebarButtonProps> = ({path, text, onClick}) => {
     return (
         <SidebarButton onClick={onClick}>
-            <Icon path={path} size={24} color={"white"} style={{marginBottom: 6, marginRight: 22}}/>
+            <Icon path={path} size={24} color={"white"} style={{marginBottom: 6, marginRight: 28}}/>
             <Title>{text}</Title>
         </SidebarButton>
 

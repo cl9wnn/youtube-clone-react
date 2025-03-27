@@ -8,8 +8,8 @@ export default function App() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     return (
       <>
-          <SideBar isOpen = {isOpen} setSidebarOpen={setIsOpen} />
-          <Header isOpen = {isOpen}/>
+          <Header isOpen = {isOpen} setSidebarOpen={setIsOpen}/>
+          <SideBar isOpen = {isOpen}  />
           <MainComponent isOpen={isOpen}/>
       </>
   )

@@ -12,7 +12,7 @@ const SideButton = styled.button`
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
-    margin-left: 6px;
+    margin-left: 7px;
     padding: 10px;
     cursor: pointer;
 
