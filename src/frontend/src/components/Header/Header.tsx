@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SearchInput from "./SearchInput.tsx";
 import Logo from "./Logo.tsx";
-import Icon from "../Common/Icon.tsx";
+import SvgIcon from "../Common/SvgIcon.tsx";
 
 const HeaderContainer = styled.header`
     display: flex;
@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({setSidebarOpen, isOpen}) => {
         <HeaderContainer>
             <LeftContainer>
                 <ToggleButton onClick={() => setSidebarOpen(!isOpen)}>
-                    <Icon path={"M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"} size={24} color={"white"}/>
+                    <SvgIcon path={"M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"} size={24} color={"white"}/>
                 </ToggleButton>
                 <Logo/>
             </LeftContainer>

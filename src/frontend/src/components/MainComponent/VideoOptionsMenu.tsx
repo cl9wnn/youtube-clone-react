@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import Icon from "../Common/Icon.tsx";
+import SvgIcon from "../Common/SvgIcon.tsx";
 
 interface Option {
     label: string;
@@ -65,7 +65,7 @@ const VideoOptionsMenu: React.FC<VideoOptionsMenuProps> = ({ options, onClose, s
             {options.map((option, index) => (
                 <>
                     <MenuItem key={option.label} onClick={option.onClick}>
-                        <Icon path={option.path} size={22} color={"white"} style={{marginRight: 14}}/>
+                        <SvgIcon path={option.path} size={22} color={"white"} style={{marginRight: 14}}/>
                         {option.label}
                     </MenuItem>
                     {index === 3 && <Divider key={`divider-${index}`} />}

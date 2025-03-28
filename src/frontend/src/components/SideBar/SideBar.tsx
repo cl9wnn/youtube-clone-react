@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import React, {useState} from "react";
 import { collapsedSidebarButtons } from "../../data/collapsedSidebarButtons.ts";
-import { expandedSidebarButtons } from "../../data/expandedSidebarButtons.ts";
 import CollapsedSidebarButton from "./CollapsedSidebarButton.tsx";
-import ExpandedSidebarButton from "./ExpandedSidebarButton.tsx";
+import {expandedSidebarSections} from "../../data/expandedSidebarSections.ts";
+import LinkSection from "./LinksSection.tsx";
+import SidebarSection from "./SidebarSection.tsx";
 
 interface SideBarContainerProps {
     isOpen: boolean;
@@ -49,20 +50,28 @@ const SidebarContainer = styled.aside<SideBarContainerProps>`
     }
 `;
 
-const SideBar: React.FC<SideBarContainerProps> = ({isOpen}) => {
-    const [activePath, setActivePath] = useState(expandedSidebarButtons[0]?.path || "");
+
+
+const SideBar: React.FC<SideBarContainerProps> = ({ isOpen }) => {
+    const [activeButton, setActiveButton] = useState(expandedSidebarSections[0]?.buttons[0]?.path || "");
 
     return (
         <SidebarContainer isOpen={isOpen}>
             {isOpen
-                ? expandedSidebarButtons.map((expandedBtn, index) => (
-                    <ExpandedSidebarButton key={index} path={expandedBtn.path} text={expandedBtn.text} isActive={activePath === expandedBtn.path} onClick={() => setActivePath(expandedBtn.path)} />
-                ))
+                ? (
+                <>
+                    {expandedSidebarSections.map((section, index) => (
+                      <SidebarSection key={index} section={section} activeButton={activeButton} setActiveButton={setActiveButton} />
+                    ))}
+                    <LinkSection />
+                </>
+                )
                 : collapsedSidebarButtons.map((collapsedBtn, index) => (
-                    <CollapsedSidebarButton key={index} path={collapsedBtn.path} text={collapsedBtn.text} onClick={() => console.log("click")} />
-                ))}
+                    <CollapsedSidebarButton key={index} path={collapsedBtn.path} text={collapsedBtn.text} onClick={() => console.log("click")}
+                    />
+                ))
+            }
         </SidebarContainer>
     );
 };
-
 export default SideBar;

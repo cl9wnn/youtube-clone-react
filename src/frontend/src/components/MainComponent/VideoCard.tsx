@@ -118,7 +118,7 @@ const SettingsBtn = styled.button`
     align-items: center;
     background-color: #007bff00;
     color: white;
-    font-size: 22px;
+    font-size: 23px;
     width: 36px;
     height: 36px;
     border: none;

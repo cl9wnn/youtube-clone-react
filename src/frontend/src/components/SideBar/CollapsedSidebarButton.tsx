@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Icon from "../Common/Icon.tsx";
+import SvgIcon from "../Common/SvgIcon.tsx";
 
 const SideButton = styled.button`
     background: none;
@@ -35,7 +35,7 @@ interface CollapsedSidebarButtonProps {
 const CollapsedSidebarButton: React.FC<CollapsedSidebarButtonProps> = ({ path, text, onClick }) => {
     return (
         <SideButton onClick={onClick}>
-            <Icon path={path} size={24} color={"white"} style={{marginBottom: 6}}/>
+            <SvgIcon path={path} size={24} color={"white"} style={{marginBottom: 6}}/>
             <Title>{text}</Title>
         </SideButton>
     );
