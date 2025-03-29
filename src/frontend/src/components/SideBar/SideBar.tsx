@@ -16,13 +16,12 @@ const SidebarContainer = styled.aside<SideBarContainerProps>`
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 0;
+    top: 74px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 74px);
     background-color: #0f0f0f;
     color: white;
-    margin-top: 74px;
-    width: ${({isOpen}) => (isOpen ? "230px" : "80px")};
+    width: ${({isOpen}) => (isOpen ? "240px" : "80px")};
     overflow-y: hidden;
     overflow-x: hidden;
 

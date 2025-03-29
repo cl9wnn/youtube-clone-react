@@ -9,8 +9,8 @@ const MainContainer = styled.div<MainContainerProps>`
     gap: 20px;
     padding: 20px 30px 20px 25px; 
     background-color: #0f0f0f;
-    width: calc(100% - ${({ isOpen }) => (isOpen ? "230px" : "80px")});
-    margin-left: ${({ isOpen }) => (isOpen ? "230px" : "80px")};
+    width: calc(100% - ${({ isOpen }) => (isOpen ? "240px" : "80px")});
+    margin-left: ${({ isOpen }) => (isOpen ? "240px" : "80px")};
     box-sizing: border-box;
 `
 

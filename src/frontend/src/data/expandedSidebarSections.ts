@@ -121,15 +121,15 @@ export const expandedSidebarSections: SidebarSection[] = [
         buttons: [
             {
                 text: "Творческая студия YouTube",
-                path:""
+                path:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_play_button_icon_%282013–2017%29.svg/1024px-YouTube_play_button_icon_%282013–2017%29.svg.png"
             },
             {
                 text: "YouTube Music",
-                path:""
+                path:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_play_button_icon_%282013–2017%29.svg/1024px-YouTube_play_button_icon_%282013–2017%29.svg.png"
             },
             {
                 text: "YouTube Детям",
-                path: ""
+                path:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_play_button_icon_%282013–2017%29.svg/1024px-YouTube_play_button_icon_%282013–2017%29.svg.png"
             }]
     },
     {

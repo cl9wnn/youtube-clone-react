@@ -20,10 +20,11 @@ const LinkItem = styled.a`
 `;
 
 const Copyright = styled.p`
-    margin-top: 20px;
     color: #686868;
     font-size: 12px;
     text-align: center;
+    margin-top: 6px;
+    margin-left: 20px;
 `;
 
 const LinksSection = () => {
