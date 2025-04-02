@@ -21,17 +21,16 @@ const HeaderContainer = styled.header`
     z-index: 1000;
 `
 
-const RoundButton = styled.button`
+const StyledButton = styled.button`
     background-color: transparent;
     color: white;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    margin: 6px 12px 12px 0;
     cursor: pointer;
 
     &:hover {
@@ -39,15 +38,59 @@ const RoundButton = styled.button`
     }
 `;
 
+const ToggleButton = styled(StyledButton)`
+    margin: 6px 12px 12px 0;
+`;
+
+const MicrophoneButton = styled(StyledButton)`
+    background-color: #2c2c2c;
+    margin-left: 14px;
+    &:hover {
+        background-color: #454545;
+    }
+`;
+
+const AccountBtn = styled(StyledButton)`
+    width: 34px;
+    height: 34px;
+    margin-right: 14px;
+`;
+
+const NotifyButton = styled(StyledButton)`
+    width: 38px;
+    height: 38px;
+    margin-right: 14px;
+`;
+
 const CreateButton = styled.button`
     display: flex;
+    padding: 6px 12px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 20%;
-    background-color: #2e2e2e;
+    border-radius: 18px;
+    background-color: #2c2c2c;
+    margin-right: 14px;
 
+    cursor: pointer;
+
+    &:hover {
+        background-color: #454545;
+    }
+`
+
+const ImgIcon = styled.img`
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    border-radius: 50%;
+`
+
+const CreateText = styled.span`
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 5px;
 `
 
 const LeftContainer = styled.div`
@@ -69,12 +112,7 @@ const RightContainer = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-`
-
-const ImgIcon = styled.img`
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    margin-right: 30px;
 `
 
 interface HeaderProps {
@@ -85,30 +123,30 @@ const Header: React.FC<HeaderProps> = ({setSidebarOpen, isOpen}) => {
     return (
         <HeaderContainer>
             <LeftContainer>
-                <RoundButton onClick={() => setSidebarOpen(!isOpen)}>
+                <ToggleButton onClick={() => setSidebarOpen(!isOpen)}>
                     <SvgIcon path={headerIcons.menu} size={24} color={"white"}/>
-                </RoundButton>
+                </ToggleButton>
                 <Logo/>
             </LeftContainer>
 
             <CenterContainer>
                 <SearchInput/>
-                <RoundButton>
+                <MicrophoneButton>
                   <SvgIcon path={headerIcons.microphone} size={24} color={"white"}></SvgIcon>
-                </RoundButton>
+                </MicrophoneButton>
             </CenterContainer>
 
             <RightContainer>
               <CreateButton>
                 <SvgIcon path={headerIcons.create} size={24} color={"white"}/>
-                <span>Создать</span>
+                <CreateText>Создать</CreateText>
               </CreateButton>
-              <RoundButton>
+              <NotifyButton>
                 <SvgIcon path={headerIcons.notify} size={24} color={"white"}></SvgIcon>
-              </RoundButton>
-              <RoundButton>
+              </NotifyButton>
+              <AccountBtn>
                 <ImgIcon src={headerIcons.account} alt={"account"}></ImgIcon>
-              </RoundButton>
+              </AccountBtn>
             </RightContainer>
 
         </HeaderContainer>
