@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SearchInput from "./SearchInput.tsx";
 import Logo from "./Logo.tsx";
 import SvgIcon from "../Common/SvgIcon.tsx";
+import {headerIcons} from "../../data/headerIcons.ts";
 
 const HeaderContainer = styled.header`
     display: flex;
@@ -20,7 +21,7 @@ const HeaderContainer = styled.header`
     z-index: 1000;
 `
 
-const ToggleButton = styled.button`
+const RoundButton = styled.button`
     background-color: transparent;
     color: white;
     width: 44px;
@@ -37,6 +38,17 @@ const ToggleButton = styled.button`
         background-color: #2e2e2e;
     }
 `;
+
+const CreateButton = styled.button`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20%;
+    background-color: #2e2e2e;
+
+`
 
 const LeftContainer = styled.div`
     display: flex;
@@ -59,6 +71,12 @@ const RightContainer = styled.div`
     justify-content: center;
 `
 
+const ImgIcon = styled.img`
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+`
+
 interface HeaderProps {
     setSidebarOpen: (isOpen: boolean) => void;
     isOpen: boolean;
@@ -67,18 +85,30 @@ const Header: React.FC<HeaderProps> = ({setSidebarOpen, isOpen}) => {
     return (
         <HeaderContainer>
             <LeftContainer>
-                <ToggleButton onClick={() => setSidebarOpen(!isOpen)}>
-                    <SvgIcon path={"M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"} size={24} color={"white"}/>
-                </ToggleButton>
+                <RoundButton onClick={() => setSidebarOpen(!isOpen)}>
+                    <SvgIcon path={headerIcons.menu} size={24} color={"white"}/>
+                </RoundButton>
                 <Logo/>
             </LeftContainer>
 
             <CenterContainer>
                 <SearchInput/>
+                <RoundButton>
+                  <SvgIcon path={headerIcons.microphone} size={24} color={"white"}></SvgIcon>
+                </RoundButton>
             </CenterContainer>
 
             <RightContainer>
-
+              <CreateButton>
+                <SvgIcon path={headerIcons.create} size={24} color={"white"}/>
+                <span>Создать</span>
+              </CreateButton>
+              <RoundButton>
+                <SvgIcon path={headerIcons.notify} size={24} color={"white"}></SvgIcon>
+              </RoundButton>
+              <RoundButton>
+                <ImgIcon src={headerIcons.account} alt={"account"}></ImgIcon>
+              </RoundButton>
             </RightContainer>
 
         </HeaderContainer>

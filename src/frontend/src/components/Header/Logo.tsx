@@ -5,7 +5,7 @@ import React from "react";
 const LogoContainer = styled.div`
     display: flex;
     flex-direction: row;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
 `
 
 const LogoImage = styled.img`
