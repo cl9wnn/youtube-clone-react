@@ -21,14 +21,14 @@ const SearchContainer = styled.div`
 const Input = styled.input`
     flex-grow: 1;
     height: 36px;
-    border-top: 1px solid #424242;
-    border-bottom: 1px solid #424242;
-    border-left: 1px solid #424242;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    border-left: 1px solid #303030;
     border-right: none;
     border-radius: 20px 0 0 20px;
     font-size: 16px;
     padding-left: 16px;
-    
+
     &::placeholder {
         font-size: 16px;
         color: #999;

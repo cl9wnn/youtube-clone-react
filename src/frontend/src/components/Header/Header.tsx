@@ -107,7 +107,7 @@ const CenterContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 80vh;
+    max-width: 75vh;
     margin: 0 20px; 
 `;
 
