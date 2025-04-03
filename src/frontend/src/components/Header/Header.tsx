@@ -45,6 +45,8 @@ const ToggleButton = styled(StyledButton)`
 const MicrophoneButton = styled(StyledButton)`
     background-color: #2c2c2c;
     margin-left: 14px;
+    flex-shrink: 0;
+    
     &:hover {
         background-color: #454545;
     }
@@ -99,13 +101,15 @@ const LeftContainer = styled.div`
     align-items: center;
     justify-content: center;
 `
-
 const CenterContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-`
+    flex-grow: 1;
+    max-width: 80vh;
+    margin: 0 20px; 
+`;
 
 const RightContainer = styled.div`
     display: flex;

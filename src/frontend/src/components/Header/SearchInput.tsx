@@ -11,38 +11,44 @@ const SearchButton = styled.button`
     height: 40px;
     padding: 0 18px;
 `
+const SearchContainer = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; 
+`;
 
 const Input = styled.input`
+    flex-grow: 1;
     height: 36px;
-    width: 525px;
     border-top: 1px solid #424242;
     border-bottom: 1px solid #424242;
     border-left: 1px solid #424242;
-    border-right: none; 
+    border-right: none;
     border-radius: 20px 0 0 20px;
     font-size: 16px;
-
+    padding-left: 16px;
+    
     &::placeholder {
         font-size: 16px;
         color: #999;
         font-weight: 400;
-        padding: 0 16px;
     }
 
     &:focus {
         outline: none;
         border: 1px solid #0047f4;
     }
-`
+`;
 
 const SearchInput: React.FC = () => {
   return (
-    <>
+    <SearchContainer>
       <Input type="text" placeholder="Введите запрос" />
-      <SearchButton >
-        <SvgIcon path={headerIcons.search} size={24} color={"white"}></SvgIcon>
+      <SearchButton>
+        <SvgIcon path={headerIcons.search} size={24} color={"white"} />
       </SearchButton>
-    </>
+    </SearchContainer>
   )
 }
 
