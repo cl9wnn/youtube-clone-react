@@ -36,14 +36,14 @@ const Input = styled.input`
 `
 
 const SearchInput: React.FC = () => {
-    return (
-      <>
-        <Input type="text" placeholder="Введите запрос" />
+  return (
+    <>
+      <Input type="text" placeholder="Введите запрос" />
       <SearchButton >
-          <SvgIcon path={headerIcons.search} size={24} color={"white"}></SvgIcon>
+        <SvgIcon path={headerIcons.search} size={24} color={"white"}></SvgIcon>
       </SearchButton>
-      </>
-    )
+    </>
+  )
 }
 
 export default SearchInput;
